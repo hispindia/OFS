@@ -510,7 +510,8 @@
 
 						jQuery.ajax({
 							type: "GET",
-							url: getContextPath() + "/getData.html",
+							//url: getContextPath() + "/getData.html",
+                            url: encodeURI(getContextPath()+"/getData.html"),
 							data: ({
 								country: country,
 								unitIndex: unitIndex,
